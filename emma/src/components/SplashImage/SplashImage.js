@@ -1,27 +1,25 @@
-// src/components/SplashImage.js
+// src/components/SplashCarousel.js
 import React from 'react';
-import { Jumbotron, Container } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 
-function SplashImage() {
-  const jumbotronStyle = {
-    backgroundImage: 'url(./assets/splash.jpg)', // Replace with your image path
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    color: 'white',
-    height: '100vh',
-    marginBottom: '0',
-  };
+import './SplashImage.css'
 
-  return (
-    <Jumbotron fluid style={jumbotronStyle}>
-      <Container className="d-flex h-100 align-items-center">
-        <div>
-          <h1>Welcome to Our Apprenticeship Program</h1>
-          <p>Building the future of mainframe technology together.</p>
-        </div>
-      </Container>
-    </Jumbotron>
-  );
-}
+import splashImage from '../../assets/testbackground.jpg'
+
+const SplashImage = () => (
+  <Carousel controls={false} indicators={false}>
+    <Carousel.Item>
+      <img
+        className="d-block w-100"
+        src={splashImage}
+        alt="First slide"
+      />
+      <Carousel.Caption>
+        <h3>First Slide Title</h3>
+        <p>Description for the first slide.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+  </Carousel>
+);
 
 export default SplashImage;

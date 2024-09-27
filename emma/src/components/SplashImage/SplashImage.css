@@ -1,0 +1,38 @@
+/* src/components/SplashCarousel.css */
+
+/* Make the carousel item fill the viewport */
+.carousel-item {
+    height: 100vh;
+  }
+  
+  /* Ensure the image fills the carousel item */
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  /* Customize the caption positioning */
+  .carousel-caption {
+    top: 0;
+    bottom: 0;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Style the caption content */
+  .carousel-caption-content {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.5rem;
+  }
+  
