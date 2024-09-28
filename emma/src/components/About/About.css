@@ -1,21 +1,104 @@
 /* src/components/About.css */
 
-/* Remove padding from columns */
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+/* Section styling */
+.about-section {
+  background-color: #f9f9f9;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px; /* Added padding */
+  padding-right: 20px;
+}
+
+/* Heading styling */
+.about-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Row styling */
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px; /* Negative margin to offset card margins */
+  margin-right: -20px;
+}
+
+/* Column styling */
 .about-col {
-    padding-left: 0;
-    padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0; /* Remove padding */
+  padding-right: 0;
+}
+
+/* Card styling */
+.about-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 20px; /* Added margin around cards */
+}
+
+/* Image styling */
+.about-card img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 400px; /* Adjust as needed */
+}
+
+/* Card Body */
+.about-card .card-body {
+  flex: 1;
+  padding: 25px; /* Increased padding inside cards */
+  margin-bottom: 25rem;
+}
+
+/* Card Title */
+.about-card .card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Card Text */
+.about-card .card-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-card {
+    margin: 15px; /* Reduced margin for smaller screens */
   }
-  
-  /* Ensure images fill the column width */
-  .about-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+
+  .about-row {
+    margin-left: -15px;
+    margin-right: -15px;
   }
-  
-  /* Optional: Remove margins from the container */
+
   .about-section {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-card .card-body {
+    padding: 20px; /* Adjust padding inside cards */
+  }
+
+  .about-card .card-title {
+    font-size: 1.25rem;
+  }
+}
