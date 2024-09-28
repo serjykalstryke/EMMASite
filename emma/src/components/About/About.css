@@ -1,0 +1,23 @@
+/* src/components/About.css */
+
+.about-card {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  .about-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .about-card .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .about-card .card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+  }
+  
