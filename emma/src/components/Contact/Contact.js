@@ -1,5 +1,6 @@
 // src/components/Contact.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, Button } from 'react-bootstrap';
 import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,9 +19,11 @@ function Contact() {
             <Card.Text className="mb-4">
               Interested in joining our apprenticeship program? We'd love to hear from you!
             </Card.Text>
-            <Button variant="primary" href="/apply" size="lg">
-              Intake Form
-            </Button>
+            <Link to="/apply">
+             <Button variant="primary" href="/apply" size="lg">
+               Intake Form
+              </Button>
+            </Link>
             <div className="contact-info mt-4">
               <p>
                 <FontAwesomeIcon icon={faEnvelope} />{' '}
