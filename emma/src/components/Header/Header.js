@@ -17,7 +17,7 @@ function Header() {
             Get in Touch
           </Nav.Link>
           <Nav.Link as={Link} to="/apply">
-            Apply
+           Interested?
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
