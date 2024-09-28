@@ -10,9 +10,8 @@
 }
 
 .contact-content {
-  max-width: 1200px; /* Adjust the max-width as needed */
-  margin: 0 auto;
-  padding: 0 15px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .contact-card {

@@ -1,23 +1,21 @@
 /* src/components/About.css */
 
-.about-card {
-    margin-bottom: 30px;
-    border: none;
+/* Remove padding from columns */
+.about-col {
+    padding-left: 0;
+    padding-right: 0;
   }
   
+  /* Ensure images fill the column width */
   .about-card img {
-    height: 200px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
   }
   
-  .about-card .card-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .about-card .card-text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+  /* Optional: Remove margins from the container */
+  .about-section {
+    padding-left: 0;
+    padding-right: 0;
   }
   
