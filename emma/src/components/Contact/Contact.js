@@ -4,7 +4,7 @@ import { Card, Button } from 'react-bootstrap';
 import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 
 function Contact() {
@@ -33,10 +33,7 @@ function Contact() {
             </div>
             <div className="social-media mt-3">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="mx-2">
-                <FontAwesomeIcon icon={faFacebookF} size="2x" />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="mx-2">
-                <FontAwesomeIcon icon={faTwitter} size="2x" />
+                <FontAwesomeIcon icon={faYoutube} size="2x" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="mx-2">
                 <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
