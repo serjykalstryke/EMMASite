@@ -1,7 +1,8 @@
-/* src/components/SplashCarousel.css */
+/* SplashImage.css */
 
-/* Make the carousel item fill the viewport */
+/* Ensure the carousel item fills the viewport */
 .carousel-item {
+    position: relative;
     height: 100vh;
   }
   
@@ -11,28 +12,57 @@
     object-fit: cover;
   }
   
-  /* Customize the caption positioning */
-  .carousel-caption {
+  /* Overlay to enhance text readability */
+  .carousel-item::before {
+    content: '';
+    position: absolute;
     top: 0;
-    bottom: 0;
-    transform: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
   
-  /* Style the caption content */
-  .carousel-caption-content {
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Adjust the caption positioning */
+  .carousel-item .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    right: auto;
+    transform: translate(0, -50%);
+    text-align: left !important;
+    z-index: 2;
+    width: auto;
+    padding-bottom: 0;
   }
   
-  .carousel-caption h1 {
+  /* Style the caption text */
+  .carousel-item .carousel-caption h3 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
   
-  .carousel-caption p {
+  .carousel-item .carousel-caption p {
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .carousel-item .carousel-caption h3 {
+      font-size: 2.5rem;
+    }
+  
+    .carousel-item .carousel-caption p {
+      font-size: 1.2rem;
+    }
   }
   

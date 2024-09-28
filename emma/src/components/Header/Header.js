@@ -5,7 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 function Header() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
-      <Navbar.Brand href="#home">Mainframe Apprenticeship Program</Navbar.Brand>
+      <Navbar.Brand href="#home">EMMA</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
