@@ -7,7 +7,7 @@ function Footer() {
     <footer className="bg-dark text-white py-4">
       <Container>
         <p className="mb-0 text-center">
-          &copy; {new Date().getFullYear()} Mainframe Apprenticeship Program. All rights reserved.
+          &copy; {new Date().getFullYear()} Eli Madison Memorial Apprenticeship. All rights reserved.
         </p>
       </Container>
     </footer>
