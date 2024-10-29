@@ -1,51 +1,20 @@
-// src/components/About.js
+// About.js
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
 import './About.css';
 
-function About() {
-  return (
-    <section id="about" className="about-section">
-      <Container fluid className="p-0">
-        <h2 className="text-center mb-4">Our Programs</h2>
-        <Row noGutters className="about-row">
-          <Col xs={12} md={4} className="about-col">
-            <Card className="about-card">
-              <Card.Img variant="top" src="path_to_image1.jpg" alt="Section 1 Image" />
-              <Card.Body>
-                <Card.Title>Section 1</Card.Title>
-                <Card.Text>
-                  It's dangerous to go alone! Take this. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nunc at justo sodales gravida.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} md={4} className="about-col">
-            <Card className="about-card">
-              <Card.Img variant="top" src="path_to_image2.jpg" alt="Section 2 Image" />
-              <Card.Body>
-                <Card.Title>Section 2</Card.Title>
-                <Card.Text>
-                  The flow of time is always cruel. Its speed seems different for each person, but no one can change it.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} md={4} className="about-col">
-            <Card className="about-card">
-              <Card.Img variant="top" src="path_to_image3.jpg" alt="Section 3 Image" />
-              <Card.Body>
-                <Card.Title>Section 3</Card.Title>
-                <Card.Text>
-                  Courage need not be remembered, for it is never forgotten. Fusce quis ante in nunc venenatis finibus.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-  );
-}
+const About = () => (
+  <section className="about-section">
+    <h2 className="about-title">About EMMA</h2>
+    <p>
+      The Eli Madison Memorial Mainframe Apprenticeship (EMMA) is dedicated to addressing the skills gap in mainframe technology by offering comprehensive training and hands-on experience to aspiring IT professionals. The program aims to equip individuals with the expertise needed for careers in mainframe technology and to fulfill the increasing demand for skilled mainframe professionals across various industries. Our unique approach combines rigorous training with real-world application, setting us apart from traditional training programs.
+    </p>
+    <p>
+      EMMA aims to empower the next generation of mainframe experts by providing hands-on training, mentorship, and career development opportunities.
+    </p>
+    <p>
+      To honor Eli Madison’s legacy by empowering aspiring professionals with hands-on experience, mentorship, and career development opportunities through apprenticeship programs with a strong foundation in truth, facts, data, reason, and logic, ensuring mutually beneficial outcomes for participants and industry partners.
+    </p>
+  </section>
+);
 
 export default About;
