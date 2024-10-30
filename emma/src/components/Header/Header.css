@@ -22,23 +22,43 @@
   /* Large screens: align the Employee Login button on the far right */
   .employee-login-lg {
     display: inline-flex;
-    margin-right: 1rem;
+    margin-right: 1rem; /* Add spacing from the right edge */
   }
   
-  /* Small screens: display the button within the collapsed menu */
+  /* Small screens: styling adjustments */
   @media (max-width: 991px) {
+    /* Stack nav links vertically with padding for alignment */
+    .nav-links {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      gap: 1rem;
+      padding: 0 1rem; /* Align with brand */
+      margin-top: 1rem;
+    }
+  
+    /* Hide the right-aligned Employee Login button */
+    .employee-login-lg {
+      display: none;
+    }
+  
+    /* Display Employee Login button at the bottom of the menu */
     .employee-login-sm {
       display: block;
+      padding: 10px 1rem; /* Add horizontal padding to align with other items */
       width: 100%;
-      padding: 10px 0; /* Add vertical padding for spacing */
+      margin-top: 1rem; /* Space from the last nav link */
     }
   
-    .employee-login-lg {
-      display: none; /* Hide the button on the far right on small screens */
+    /* Make the button full-width inside the collapsed menu */
+    .employee-login-sm .btn {
+      width: 100%;
     }
   
-    .navbar-collapse .employee-login-sm .btn {
-      width: 100%; /* Full-width button in the collapsed menu */
+    /* Center brand, stack content vertically on small screens */
+    .navbar-collapse-custom {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 1rem;
     }
   }
   
