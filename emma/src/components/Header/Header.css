@@ -22,6 +22,7 @@
   /* Large screens: align the Employee Login button on the far right */
   .employee-login-lg {
     display: inline-flex;
+    margin-right: 1rem;
   }
   
   /* Small screens: display the button within the collapsed menu */
