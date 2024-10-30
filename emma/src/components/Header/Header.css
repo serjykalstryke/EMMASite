@@ -1,10 +1,43 @@
 /* Header.css */
 
-/* Adds padding to the left for the brand and right for the button */
-.navbar .navbar-brand {
-    margin-left: 1%
+/* Adds padding to the brand on the left */
+.brand-padding {
+    padding-left: 1rem;
   }
   
-  .navbar .btn.ml-auto {
-    margin-right: 1%
+  /* Flexbox layout for navbar items */
+  .navbar-collapse-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
+  
+  /* Ensure nav links are grouped on the left */
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Large screens: align the Employee Login button on the far right */
+  .employee-login-lg {
+    display: inline-flex;
+  }
+  
+  /* Small screens: display the button within the collapsed menu */
+  @media (max-width: 991px) {
+    .employee-login-sm {
+      display: block;
+      width: 100%;
+      padding: 10px 0; /* Add vertical padding for spacing */
+    }
+  
+    .employee-login-lg {
+      display: none; /* Hide the button on the far right on small screens */
+    }
+  
+    .navbar-collapse .employee-login-sm .btn {
+      width: 100%; /* Full-width button in the collapsed menu */
+    }
+  }
+  
