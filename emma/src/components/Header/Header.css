@@ -1,0 +1,10 @@
+/* Header.css */
+
+/* Adds padding to the left for the brand and right for the button */
+.navbar .navbar-brand {
+    margin-left: 1%
+  }
+  
+  .navbar .btn.ml-auto {
+    margin-right: 1%
+  }
