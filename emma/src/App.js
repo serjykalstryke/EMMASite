@@ -7,10 +7,11 @@ import About from './components/About/About';
 import Mission from './components/Mission/Mission';
 import Vision from './components/Vision/Vision'
 import Contact from './components/Contact/Contact';
-import IntakeForm from './components/IntakeForm/IntakeForm';
 import Footer from './components/Footer/Footer';
 
 import './App.css'
+
+
 
 function App() {
   return (
@@ -31,7 +32,6 @@ function App() {
             </>
           }
         />
-        <Route path="/apply" element={<IntakeForm />} />
       </Routes>
       <Footer />
     </Router>
