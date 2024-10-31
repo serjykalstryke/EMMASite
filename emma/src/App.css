@@ -7,6 +7,28 @@
   pointer-events: none;
 }
 
+body {
+  background-color: #f0f0f0; /* Light grey background */
+  color: #333333; /* Dark grey text for contrast */
+}
+
+.custom-header {
+  background-color: #333333; /* Dark grey header */
+  color: #ffffff; /* White text in header */
+}
+
+/* Apply a consistent background across all content areas */
+.content-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Optional: add padding for any inner elements */
+.main-content {
+  padding: 1rem;
+}
+
+
 .info-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -37,7 +59,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
