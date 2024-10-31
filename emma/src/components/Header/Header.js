@@ -46,6 +46,9 @@ function Header() {
           <Nav.Link as={Link} to="/meet-the-team">
             Meet the Team
           </Nav.Link>
+          <Nav.Link as={Link} to="/meet-the-team">
+            What is an apprenticeship?
+          </Nav.Link>
         </Nav>
 
         {/* Conditionally render Employee Login Button based on screen size */}
