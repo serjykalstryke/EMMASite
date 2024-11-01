@@ -1,4 +1,8 @@
 /* App.css */
+:root {
+  --electric-blue: rgb(145, 188, 187); /* Same electric blue variable you already have */
+}
+
 
 body {
   background-color: #1e1e1e; /* Dark background for the entire page */
