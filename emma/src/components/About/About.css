@@ -1,27 +1,39 @@
 /* About.css */
+
 .about-section {
-  background-color: #f4f4f4;
+  background-color: rgb(40,40,40);
   padding: 2rem;
   border-radius: 8px;
   margin: 1rem 0;
 }
 
+/* Electric blue text style */
+.electric-blue-text {
+  color: rgb(145,188,187);
+  text-shadow: 
+      0 0 5px rgba(147, 192, 190, 0.6), 
+      0 0 10px rgba(147, 192, 190, 0.4), 
+      0 0 15px rgba(147, 192, 190, 0.2); /* Soft glow effect */
+}
+
 .about-title {
   font-size: 2rem;
-  color: #2c3e50;
   font-weight: 700;
   border-bottom: 3px solid #3498db;
   padding-bottom: 0.5rem;
+  text-shadow: 
+  0 0 5px rgba(147, 192, 190, 0.6), 
+  0 0 10px rgba(147, 192, 190, 0.4), 
+  0 0 15px rgba(147, 192, 190, 0.2); /* Soft glow effect */
 }
 
 .about-content p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #34495e;
+  color: rgb(145,188,187);
   margin-bottom: 1rem;
 }
 
 .about-content strong {
-  color: #2c3e50;
   font-weight: 600;
 }

@@ -1,75 +1,39 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* App.css */
 
 body {
-  background-color: #f0f0f0; /* Light grey background */
-  color: #333333; /* Dark grey text for contrast */
+  background-color: #1e1e1e; /* Dark background for the entire page */
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.custom-header {
-  background-color: #333333; /* Dark grey header */
-  color: #ffffff; /* White text in header */
+/* Container for the info-grid to add spacing and maintain alignment */
+.info-grid-container {
+  background-color: rgb(51,51,51); /* Dark background behind the grid */
+  padding: 40px 0; /* Padding to create space around the grid */
 }
 
-/* Apply a consistent background across all content areas */
-.content-container {
-  background-color: #f0f0f0;
-  padding: 20px;
-}
-
-/* Optional: add padding for any inner elements */
-.main-content {
-  padding: 1rem;
-}
-
-
+/* Grid layout for About, Mission, and Vision sections */
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns for large screens */
   gap: 1.5rem;
-  padding: 1rem; /* Reduces side padding */
-  max-width: 1600px; /* Expands the overall width */
-  margin: 2rem auto;
+  max-width: 2000px;
+  margin: 0 auto; /* Center the grid */
 }
 
+/* Light background for each section within the grid */
+.section-box {
+  background-color: rgb(40,40,40);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333333; /* Dark text color for readability within light box */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .info-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+    grid-template-columns: 1fr; /* Stack sections vertically on smaller screens */
   }
 }

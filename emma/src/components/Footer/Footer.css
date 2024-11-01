@@ -1,0 +1,25 @@
+/* Footer.css */
+
+/* Footer Background and Padding */
+footer {
+    background-color: rgb(40, 40, 40); /* Dark background to match the theme */
+    padding: 20px 0;
+  }
+  
+  /* Electric blue text color and glow effect */
+  footer p {
+    color: rgb(145,188,187);
+    text-shadow: 
+        0 0 5px rgba(147, 192, 190, 0.6),
+        0 0 10px rgba(147, 192, 190, 0.4),
+        0 0 15px rgba(147, 192, 190, 0.2);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  
+  /* Center text */
+  footer p.text-center {
+    text-align: center;
+  }
+  

@@ -1,68 +1,67 @@
 /* SplashImage.css */
 
-/* Ensure the carousel item fills the viewport */
 .carousel-item {
-    position: relative;
-    height: 100vh;
-  }
-  
-  /* Ensure the image fills the carousel item */
-  .carousel-item img {
-    height: 100vh;
-    object-fit: cover;
-  }
-  
-  /* Overlay to enhance text readability */
-  .carousel-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-  
-  /* Adjust the caption positioning */
-  .carousel-item .carousel-caption {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    right: auto;
-    transform: translate(0, -50%);
-    text-align: left !important;
-    z-index: 2;
-    width: auto;
-    padding-bottom: 0;
-  }
-  
-  /* Style the caption text */
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark overlay to improve text readability */
+.carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay */
+  z-index: 1;
+}
+
+.carousel-item .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  text-align: left;
+  z-index: 2;
+  width: auto;
+}
+
+/* Electric Blue Text Effect */
+.carousel-item .carousel-caption h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(145,188,187);
+  text-shadow: 
+      0 0 5px rgba(147, 192, 190, 0.6), 
+      0 0 10px rgba(147, 192, 190, 0.4), 
+      0 0 15px rgba(147, 192, 190, 0.2); /* Soft glow effect */
+}
+
+.carousel-item .carousel-caption p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: rgb(145,188,187);
+  text-shadow: 
+      0 0 5px rgba(147, 192, 190, 0.6), 
+      0 0 10px rgba(147, 192, 190, 0.4), 
+      0 0 15px rgba(147, 192, 190, 0.2); /* Soft glow effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
   .carousel-item .carousel-caption h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      font-size: 2rem;
   }
-  
   .carousel-item .carousel-caption p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin-bottom: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .carousel-item .carousel-caption h3 {
-      font-size: 2.5rem;
-    }
-  
-    .carousel-item .carousel-caption p {
       font-size: 1.2rem;
-    }
   }
-  
+}

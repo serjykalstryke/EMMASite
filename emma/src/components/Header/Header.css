@@ -1,64 +1,118 @@
 /* Header.css */
 
+/* Electric blue color variables */
+:root {
+  --electric-blue: rgb(145,188,187);
+  --blue-glow: rgba(147, 192, 190, 0.4);
+}
+
 /* Adds padding to the brand on the left */
 .brand-padding {
-    padding-left: 1rem;
-  }
-  
-  /* Flexbox layout for navbar items */
-  .navbar-collapse-custom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  /* Ensure nav links are grouped on the left */
+  padding-left: 1rem;
+  color: var(--electric-blue); /* Electric blue for brand */
+  text-shadow: 
+      0 0 5px var(--blue-glow),
+      0 0 10px var(--blue-glow),
+      0 0 15px var(--blue-glow);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Flexbox layout for navbar items */
+.navbar-collapse-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Ensure nav links are grouped on the left with electric blue color */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links .nav-link {
+  color: var(--electric-blue) !important;
+  font-weight: 500;
+  text-shadow: 
+      0 0 5px var(--blue-glow),
+      0 0 10px var(--blue-glow);
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-link:hover {
+  color: #00bfff !important; /* Lighter blue on hover */
+  text-shadow: 
+      0 0 8px var(--blue-glow),
+      0 0 12px var(--blue-glow);
+}
+
+/* Large screens: align the Employee Login button on the far right */
+.employee-login-lg {
+  display: inline-flex;
+  margin-right: 1rem;
+}
+
+.employee-login-lg .btn {
+  color: var(--electric-blue);
+  border-color: var(--electric-blue);
+  text-shadow: 
+      0 0 5px var(--blue-glow),
+      0 0 10px var(--blue-glow);
+}
+
+.employee-login-lg .btn:hover {
+  background-color: var(--electric-blue);
+  color: #ffffff;
+  border-color: var(--electric-blue);
+  text-shadow: none;
+}
+
+/* Small screens: styling adjustments */
+@media (max-width: 991px) {
+  /* Stack nav links vertically with padding for alignment */
   .nav-links {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+    padding: 0 1rem;
+    margin-top: 1rem;
   }
-  
-  /* Large screens: align the Employee Login button on the far right */
+
+  /* Hide the right-aligned Employee Login button */
   .employee-login-lg {
-    display: inline-flex;
-    margin-right: 1rem; /* Add spacing from the right edge */
+    display: none;
   }
-  
-  /* Small screens: styling adjustments */
-  @media (max-width: 991px) {
-    /* Stack nav links vertically with padding for alignment */
-    .nav-links {
-      display: flex;
-      flex-direction: column; /* Stack items vertically */
-      gap: 1rem;
-      padding: 0 1rem; /* Align with brand */
-      margin-top: 1rem;
-    }
-  
-    /* Hide the right-aligned Employee Login button */
-    .employee-login-lg {
-      display: none;
-    }
-  
-    /* Display Employee Login button at the bottom of the menu */
-    .employee-login-sm {
-      display: block;
-      padding: 10px 1rem; /* Add horizontal padding to align with other items */
-      width: 100%;
-      margin-top: 1rem; /* Space from the last nav link */
-    }
-  
-    /* Make the button full-width inside the collapsed menu */
-    .employee-login-sm .btn {
-      width: 100%;
-    }
-  
-    /* Center brand, stack content vertically on small screens */
-    .navbar-collapse-custom {
-      flex-direction: column;
-      align-items: flex-start;
-      padding-top: 1rem;
-    }
+
+  /* Display Employee Login button at the bottom of the menu */
+  .employee-login-sm {
+    display: block;
+    padding: 10px 1rem;
+    width: 100%;
+    margin-top: 1rem;
   }
-  
+
+  /* Make the button full-width inside the collapsed menu */
+  .employee-login-sm .btn {
+    width: 100%;
+    color: var(--electric-blue);
+    border-color: var(--electric-blue);
+    text-shadow: 
+        0 0 5px var(--blue-glow),
+        0 0 10px var(--blue-glow);
+  }
+
+  .employee-login-sm .btn:hover {
+    background-color: var(--electric-blue);
+    color: #ffffff;
+    text-shadow: none;
+  }
+
+  /* Center brand, stack content vertically on small screens */
+  .navbar-collapse-custom {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1rem;
+  }
+}
