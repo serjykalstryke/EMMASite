@@ -40,8 +40,8 @@ function Contact() {
             {/* Contact Info */}
             <div className="contact-info mt-4">
               <p>
-                <FontAwesomeIcon icon={faPhone} />{' '}
-                <a href="tel:+1234567890">(123) 456-7890</a>
+                <FontAwesomeIcon icon={faEnvelope} />{' '}
+                <a href="mailto:info@emma.foundation">info@emma.foundation</a>
               </p>
             </div>
 
