@@ -25,12 +25,12 @@ function Contact() {
                   Aspiring Students
                 </Button>
               </Link>
-              <Link to="https://docs.google.com/forms/d/employee-or-volunteer-link">
+              <Link to="mailto:info@emma.foundation">
                 <Button variant="primary" size="lg" className="mb-2">
                   Aspiring Employees & Volunteers
                 </Button>
               </Link>
-              <Link to="https://docs.google.com/forms/d/client-inquiry-link">
+              <Link to="mailto:investors@emma.foundation">
                 <Button variant="primary" size="lg" className="mb-2">
                   Interested Clients
                 </Button>
@@ -40,10 +40,6 @@ function Contact() {
             {/* Contact Info */}
             <div className="contact-info mt-4">
               <p>
-                <FontAwesomeIcon icon={faEnvelope} />{' '}
-                <a href="mailto:info@mainframeapprenticeship.org">info@mainframeapprenticeship.org</a>
-              </p>
-              <p>
                 <FontAwesomeIcon icon={faPhone} />{' '}
                 <a href="tel:+1234567890">(123) 456-7890</a>
               </p>
@@ -51,9 +47,6 @@ function Contact() {
 
             {/* Social Media Links */}
             <div className="social-media mt-3">
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="mx-2">
-                <FontAwesomeIcon icon={faYoutube} size="2x" />
-              </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="mx-2">
                 <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
               </a>
