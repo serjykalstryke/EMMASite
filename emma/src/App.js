@@ -7,6 +7,7 @@ import SplashImage from './components/SplashImage/SplashImage';
 import About from './components/About/About';
 import Mission from './components/Mission/Mission';
 import Vision from './components/Vision/Vision';
+import EventList from './components/EventList/EventList'; // Import EventList component
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
@@ -23,6 +24,10 @@ function App() {
             <>
               <SplashImage />
               <div className="info-grid-container">
+                <div className="flex-container">
+                  <EventList />
+                </div>
+             
                 <div className="info-grid">
                   <div className="section-box">
                     <About />
@@ -34,8 +39,11 @@ function App() {
                     <Vision />
                   </div>
                 </div>
+
+              <div className="flex-container">
+                <Contact />
               </div>
-              <Contact />
+            </div>
             </>
           }
         />
