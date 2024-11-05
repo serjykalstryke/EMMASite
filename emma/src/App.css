@@ -1,63 +1,96 @@
 /* App.css */
+
 :root {
-  --electric-blue: rgb(145, 188, 187); /* Same electric blue variable you already have */
+  --electric-blue: rgb(145, 188, 187); /* Same electric blue variable */
+  --blue-glow: rgba(147, 192, 190, 0.4);
 }
 
-
+/* Global body styling */
 body {
-  background-color: #1e1e1e; /* Dark background for the entire page */
+  background-color: #1e1e1e;
   color: #ffffff;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Container for the info-grid to add spacing and maintain alignment */
-.info-grid-container {
-  background-color: rgb(51,51,51); /* Dark background behind the grid */
-  padding: 40px 0; /* Padding to create space around the grid */
+/* Main container for all sections under SplashImage */
+.info-grid-section {
+  background-color: #333333; /* Dark background for the entire page under SplashImage */
+  padding: 2rem 0; /* Vertical padding to add spacing around sections */
 }
 
-/* Grid layout for About, Mission, and Vision sections */
+/* Container to align EventList, Info Grid, and Contact sections */
+.info-grid-container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 2rem; /* Consistent padding around content */
+  display: grid;
+  grid-gap: 2rem;
+}
+
+/* Info Grid Title Styling */
+.info-grid-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--electric-blue);
+  text-shadow: 
+      0 0 5px var(--blue-glow), 
+      0 0 10px var(--blue-glow), 
+      0 0 15px var(--blue-glow), 
+      0 0 20px rgba(145,188,187, 0.6);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+/* Underline for the Info Grid Title */
+.info-grid-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: var(--electric-blue);
+  box-shadow: 0 0 10px var(--blue-glow), 0 0 20px var(--blue-glow);
+}
+
+/* Info Grid layout for About, Mission, and Vision */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns for large screens */
-  gap: 1.5rem;
-  max-width: 2000px;
-  margin: 0 auto; /* Center the grid */
+  gap: 1rem;
 }
 
-.flex-grid-container {
-  background-color: rgb(51,51,51); /* Dark background behind the grid */
-}
-
-.flex-container {
-  display: grid;
-  grid-template-columns: repeat(1, 100%);
-  gap: 1.5rem;
-  max-width: 3000px;
-  margin: 1rem auto;
-}
-
-
-/* Box to center my content and add padding to bring things into alignment with the info-grid */
-.centered-content-container {
-  max-width: 2000px; /* Same as info-grid max-width */
-  margin: 0 auto; /* Center the container */
-  padding: 1rem; /* Optional: add padding to match overall layout */
-}
-
-/* Light background for each section within the grid */
+/* Styling for each box within Info Grid */
 .section-box {
-  background-color: rgb(40,40,40);
+  background-color: rgb(40, 40, 40);
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  color: #333333; /* Dark text color for readability within light box */
+  color: #d1d5db;
+}
+
+/* Full-width styling for EventList and Contact components */
+.centered-content-container {
+  background-color: rgb(40, 40, 40);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .info-grid {
     grid-template-columns: 1fr; /* Stack sections vertically on smaller screens */
+  }
+
+  .info-grid-title {
+    font-size: 2rem;
   }
 }

@@ -2,21 +2,50 @@
 
 /* Darker Background for the Contact Section */
 .contact-section {
-  background-color: rgb(51,51,51); /* Dark background for the entire section */
+  background-color: #333333; /* Dark background for the entire section to match EventList */
   color: #ffffff;
   text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-/* Specific Targeting for Card Background */
+/* Bottom border for the Contact Section */
+.contact-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: calc(100% - 4rem);
+  height: 2px;
+  background: var(--electric-blue);
+  box-shadow: 
+      0 0 10px rgba(147, 192, 190, 0.4), 
+      0 0 20px rgba(147, 192, 190, 0.3);
+}
+
+/* Outer Container for the light box effect */
+.contact-content {
+  max-width: 2000px;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: rgb(40, 40, 40); /* Same dark color as the Upcoming Events outer box */
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+/* Inner Light Box for Content */
 .contact-card {
-  background-color: rgb(40, 40, 40) !important;
+  background-color: rgb(40, 40, 40); /* Matches the background of .section-box */
   color: #d1d5db;
-  border: none;
-  max-width: 2000px; /* Optional: limit the width of the card itself */
-  padding: 40px 20px;
+  padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  margin: 3rem auto; /* Center the card within its container */
 }
 
 /* Title Styling with Electric Blue */
@@ -24,65 +53,55 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: rgb(145,188,187); /* Electric blue */
+  color: var(--electric-blue);
   text-shadow: 
-      0 0 5px rgba(147, 192, 190, 0.6), 
-      0 0 10px rgba(147, 192, 190, 0.4), 
-      0 0 15px rgba(147, 192, 190, 0.2); /* Soft glow effect */
-  margin-bottom: 1rem;
-  border: none;
+      0 0 5px var(--blue-glow), 
+      0 0 10px var(--blue-glow), 
+      0 0 15px var(--blue-glow);
+  margin-bottom: 1.5rem;
 }
 
 /* Introductory Text with Electric Blue */
 .contact-card .card-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
-  color: rgb(145,188,187); /* Electric blue */
+  color: var(--electric-blue);
   text-shadow: 
-      0 0 5px rgba(147, 192, 190, 0.6), 
-      0 0 10px rgba(147, 192, 190, 0.4), 
-      0 0 15px rgba(147, 192, 190, 0.2); /* Soft glow effect */
+      0 0 5px var(--blue-glow), 
+      0 0 10px var(--blue-glow);
   margin-bottom: 2rem;
-  border: none;
 }
 
 /* Button Styling */
 .contact-buttons .btn-primary {
-  background-color: #3498db; /* Blue button color */
+  background-color: #3498db;
   border: none;
   color: #ffffff;
   font-size: 1.2rem;
   padding: 10px 30px;
   margin: 0 10px;
   border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .contact-buttons .btn-primary:hover {
-  background-color: #1f78b4; /* Darker blue on hover */
-  color: #ffffff;
+  background-color: #1f78b4;
 }
 
 /* Contact Info Styling with Electric Blue */
 .contact-info {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
-  color: rgb(145,188,187); /* Electric blue */
-  text-shadow: 
-      0 0 5px rgba(147, 192, 190, 0.6), 
-      0 0 10px rgba(147, 192, 190, 0.4), 
-      0 0 15px rgba(147, 192, 190, 0.2); /* Soft glow effect */
+  color: var(--electric-blue);
   margin-top: 30px;
-  border: none;
 }
 
 .contact-info a {
-  color: rgb(145,188,187); /* Electric blue */
+  color: var(--electric-blue);
   text-decoration: none;
   text-shadow: 
       0 0 5px rgba(147, 192, 190, 0.6), 
       0 0 10px rgba(147, 192, 190, 0.4), 
       0 0 15px rgba(147, 192, 190, 0.2);
-  border: none; /* Soft glow effect */
 }
 
 .contact-info a:hover {
@@ -101,13 +120,12 @@
 
 /* Icon Styling with Electric Blue */
 .contact-icon {
-  color: rgb(145,188,187); /* Electric blue */
+  color: var(--electric-blue);
   text-shadow: 
       0 0 5px rgba(147, 192, 190, 0.6), 
       0 0 10px rgba(147, 192, 190, 0.4), 
-      0 0 15px rgba(147, 192, 190, 0.2); /* Soft glow effect */
+      0 0 15px rgba(147, 192, 190, 0.2);
   margin-bottom: 20px;
-  border: none;
 }
 
 /* Responsive Adjustments */
@@ -121,7 +139,7 @@
   }
 
   .contact-buttons .btn-primary {
-    width: 100%; /* Full width on small screens */
+    width: 100%;
     margin: 10px 0;
   }
 }
