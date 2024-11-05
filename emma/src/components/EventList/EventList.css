@@ -2,7 +2,7 @@
 
 .event-list-section {
     padding: 2rem;
-    background-color: #333333;
+    background-color: rgb(20,25,30);
     color: #ffffff;
     text-align: center;
     width: 100%;
@@ -74,7 +74,7 @@
 
 /* Event Card */
 .event-card {
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(28,32,40);
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);

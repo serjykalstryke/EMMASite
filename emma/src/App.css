@@ -1,82 +1,78 @@
-/* App.css */
-
 :root {
-  --electric-blue: rgb(145, 188, 187); /* Same electric blue variable */
-  --blue-glow: rgba(147, 192, 190, 0.4);
+  --electric-blue: rgb(145, 188, 187); /* Electric blue accent */
+  --subtle-gray: rgb(30, 30, 34); /* Darker base gray for backgrounds */
+  --soft-gray: rgb(40, 40, 45); /* Soft gray for section boxes */
+  --text-light-gray: #d1d5db; /* Light text for contrast */
+  --blue-glow: rgba(147, 192, 190, 0.4); /* Blue glow for text shadow */
 }
 
 /* Global body styling */
 body {
-  background-color: #1e1e1e;
-  color: #ffffff;
+  background-color: var(--subtle-gray);
+  color: var(--text-light-gray);
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Main container for all sections under SplashImage */
+/* Section Background Styling */
 .info-grid-section {
-  background-color: #333333; /* Dark background for the entire page under SplashImage */
-  padding: 2rem 0; /* Vertical padding to add spacing around sections */
+  background-color: var(--subtle-gray);
+  padding: 2rem 0;
 }
 
-/* Container to align EventList, Info Grid, and Contact sections */
-.info-grid-container {
-  max-width: 2000px;
-  margin: 0 auto;
-  padding: 2rem; /* Consistent padding around content */
-  display: grid;
-  grid-gap: 2rem;
-}
-
-/* Info Grid Title Styling */
-.info-grid-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--electric-blue);
-  text-shadow: 
-      0 0 5px var(--blue-glow), 
-      0 0 10px var(--blue-glow), 
-      0 0 15px var(--blue-glow), 
-      0 0 20px rgba(145,188,187, 0.6);
-  text-align: center;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  position: relative;
-  letter-spacing: 1px;
-}
-
-/* Underline for the Info Grid Title */
-.info-grid-title::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 2px;
-  background: var(--electric-blue);
-  box-shadow: 0 0 10px var(--blue-glow), 0 0 20px var(--blue-glow);
-}
-
-/* Info Grid layout for About, Mission, and Vision */
+/* Container Styling */
+/* Info Grid Container */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns for large screens */
   gap: 1rem;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 /* Styling for each box within Info Grid */
 .section-box {
-  background-color: rgb(40, 40, 40);
+  background-color: rgb(28, 32, 40); /* Updated to the desired dark grey */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #d1d5db;
+  margin: 1rem 0;
+}
+
+/* Title styling for individual sections */
+.info-grid-title, .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(145, 188, 187); /* Electric blue for titles */
+  text-shadow: 
+    0 0 5px rgba(147, 192, 190, 0.6), 
+    0 0 10px rgba(147, 192, 190, 0.4), 
+    0 0 15px rgba(147, 192, 190, 0.2); /* Soft glow effect */
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Info Grid layout */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Styling for each box */
+.section-box {
+  background-color: rgb(28, 32, 40);
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  color: #d1d5db;
+  color: var(--text-light-gray);
 }
 
-/* Full-width styling for EventList and Contact components */
+/* Full-width styling for EventList and Contact */
 .centered-content-container {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--soft-gray);
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -87,9 +83,8 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .info-grid {
-    grid-template-columns: 1fr; /* Stack sections vertically on smaller screens */
+    grid-template-columns: 1fr;
   }
-
   .info-grid-title {
     font-size: 2rem;
   }

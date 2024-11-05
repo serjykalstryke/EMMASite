@@ -1,9 +1,10 @@
 /* Vision.css */
 
 .vision-section {
-  background-color: rgb(40,40,40);
+  background-color: rgb(28, 32, 40); /* Updated to the desired dark grey */
   padding: 2rem;
   border-radius: 8px;
+  color: #d1d5db;
   margin: 1rem 0;
 }
 
@@ -19,18 +20,20 @@
 .vision-title {
   font-size: 2rem;
   font-weight: 700;
+  color: rgb(145, 188, 187);
+  text-shadow: 
+    0 0 5px rgba(147, 192, 190, 0.6),
+    0 0 10px rgba(147, 192, 190, 0.4),
+    0 0 15px rgba(147, 192, 190, 0.2);
+  margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid #3498db;
-  text-shadow: 
-  0 0 5px rgba(147, 192, 190, 0.6), 
-  0 0 10px rgba(147, 192, 190, 0.4), 
-  0 0 15px rgba(147, 192, 190, 0.2); /* Soft glow effect */
 }
 
 .vision-content p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: rgb(145,188,187);
+  color: rgb(145, 188, 187);
   margin-bottom: 1rem;
 }
 

@@ -1,51 +1,31 @@
 /* src/components/Contact.css */
 
-/* Darker Background for the Contact Section */
+/* Full-width dark background for the Contact Section */
 .contact-section {
-  background-color: #333333; /* Dark background for the entire section to match EventList */
+  background-color: var(--subtle-gray);
   color: #ffffff;
   text-align: center;
   width: 100%;
-  padding: 2rem 0;
   position: relative;
-  display: flex;
-  justify-content: center;
 }
 
-/* Bottom border for the Contact Section */
-.contact-section::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  width: calc(100% - 4rem);
-  height: 2px;
-  background: var(--electric-blue);
-  box-shadow: 
-      0 0 10px rgba(147, 192, 190, 0.4), 
-      0 0 20px rgba(147, 192, 190, 0.3);
-}
-
-/* Outer Container for the light box effect */
+/* Outer container for contact content to ensure a max-width */
 .contact-content {
   max-width: 2000px;
   width: 100%;
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  background-color: rgb(40, 40, 40); /* Same dark color as the Upcoming Events outer box */
+  background-color: var(---gray);
   border-radius: 8px;
   margin: 0 auto;
 }
 
-/* Inner Light Box for Content */
+/* Inner Light Box for Contact Card */
 .contact-card {
-  background-color: rgb(40, 40, 40); /* Matches the background of .section-box */
-  color: #d1d5db;
+  background-color: rgb(28, 32, 40) !important; /* Ensure inner card has correct dark shade */
+  color: #d1d5db !important;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 /* Title Styling with Electric Blue */
@@ -53,7 +33,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--electric-blue);
+  color: var(--electric-blue) !important;
   text-shadow: 
       0 0 5px var(--blue-glow), 
       0 0 10px var(--blue-glow), 
@@ -65,7 +45,7 @@
 .contact-card .card-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
-  color: var(--electric-blue);
+  color: var(--electric-blue) !important;
   text-shadow: 
       0 0 5px var(--blue-glow), 
       0 0 10px var(--blue-glow);
@@ -74,9 +54,9 @@
 
 /* Button Styling */
 .contact-buttons .btn-primary {
-  background-color: #3498db;
+  background-color: #3498db !important;
   border: none;
-  color: #ffffff;
+  color: #ffffff !important;
   font-size: 1.2rem;
   padding: 10px 30px;
   margin: 0 10px;
@@ -85,18 +65,18 @@
 }
 
 .contact-buttons .btn-primary:hover {
-  background-color: #1f78b4;
+  background-color: #1f78b4 !important;
 }
 
 /* Contact Info Styling with Electric Blue */
 .contact-info {
   font-size: 1.1rem;
-  color: var(--electric-blue);
+  color: var(--electric-blue) !important;
   margin-top: 30px;
 }
 
 .contact-info a {
-  color: var(--electric-blue);
+  color: var(--electric-blue) !important;
   text-decoration: none;
   text-shadow: 
       0 0 5px rgba(147, 192, 190, 0.6), 
@@ -110,17 +90,17 @@
 
 /* Social Media Icons */
 .social-media a {
-  color: #ffffff;
+  color: #ffffff !important;
   margin: 0 10px;
 }
 
 .social-media a:hover {
-  color: #e6e6e6;
+  color: #e6e6e6 !important;
 }
 
 /* Icon Styling with Electric Blue */
 .contact-icon {
-  color: var(--electric-blue);
+  color: var(--electric-blue) !important;
   text-shadow: 
       0 0 5px rgba(147, 192, 190, 0.6), 
       0 0 10px rgba(147, 192, 190, 0.4), 
