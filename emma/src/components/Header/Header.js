@@ -46,6 +46,7 @@ function Header() {
       </Navbar.Toggle>
       <Navbar.Collapse id="basic-navbar-nav" className="navbar-collapse-custom">
         <Nav className="nav-links" onClick={handleLinkClick}>
+          <Nav.Link as={HashLink} smooth to="/#upcoming-events">Upcoming Events</Nav.Link>
           <Nav.Link as={HashLink} smooth to="/#about">About</Nav.Link>
           <Nav.Link as={HashLink} smooth to="/#contact">Get in Touch</Nav.Link>
           <Nav.Link as={Link} to="/meet-the-team">Meet the Team</Nav.Link>

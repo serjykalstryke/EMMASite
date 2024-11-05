@@ -44,7 +44,7 @@ const EventList = () => {
   
     return (
       <section className="event-list-section centered-content-container">
-        <h2 className="event-list-title">Upcoming Events</h2>
+        <h2 id="upcoming-events" className="event-list-title">Upcoming Events</h2>
         <div className="event-list-container">
           {eventData.map((event) => (
             <div key={event.id} className="event-card">

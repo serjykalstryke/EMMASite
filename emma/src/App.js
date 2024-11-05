@@ -30,7 +30,7 @@ function App() {
                   <EventList />
 
                   {/* Info Grid Title */}
-                  <h2 className="info-grid-title">Our Mission and Vision</h2>
+                  <h2 id="about" className="info-grid-title">Our Mission and Vision</h2>
                   
                   {/* Info Grid */}
                   <div className="info-grid">

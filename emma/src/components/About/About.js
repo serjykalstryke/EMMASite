@@ -3,7 +3,7 @@ import React from 'react';
 import './About.css';
 
 const About = () => (
-  <section id="about" className="about-section">
+  <section className="about-section">
     <h2 className="about-title electric-blue-text">About EMMA</h2>
     <div className="about-content">
       <p>
