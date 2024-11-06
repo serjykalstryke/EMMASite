@@ -55,6 +55,7 @@ function App() {
         />
         <Route path="/meet-the-team" element={<PlaceholderPage />} />
         <Route path="/apprenticeship-info" element={<PlaceholderPage />} />
+        <Route path="/employee-login" element={<PlaceholderPage />} />
       </Routes>
       <Footer />
     </Router>
