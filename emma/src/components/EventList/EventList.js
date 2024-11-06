@@ -9,13 +9,19 @@ const EventList = () => {
     const getNextDateForDay = (dayOfWeek) => {
       const dayIndex = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"].indexOf(dayOfWeek);
       if (dayIndex === -1) return null; // Invalid day check
-  
+    
       const today = new Date();
       const currentDay = today.getDay();
-      const daysUntilNext = (dayIndex - currentDay + 7) % 7 || 7; // Calculate days until next occurrence
-  
+      const isAfterMeetingTime = currentDay === dayIndex && today.getHours() >= 18; // Check if it's Wednesday after 6 PM
+      const isPastDayOfWeek = currentDay > dayIndex || isAfterMeetingTime; // Thursday or later, or after 6 PM on Wednesday
+    
+      // Calculate days until the next occurrence, considering Thursday as the reset day
+      const daysUntilNext = isPastDayOfWeek ? (7 + dayIndex - currentDay) % 7 || 7 : (dayIndex - currentDay);
+    
       const nextDate = new Date(today);
       nextDate.setDate(today.getDate() + daysUntilNext);
+      nextDate.setHours(18, 0, 0, 0); // Set time to 6 PM
+    
       return nextDate;
     };
   
