@@ -11,6 +11,8 @@ import Contact from './components/Contact/Contact';
 import EventList from './components/EventList/EventList';
 import Footer from './components/Footer/Footer';
 
+import PlaceholderPage from './components/PlaceholderPage/Placeholder';
+
 import './App.css';
 
 function App() {
@@ -23,7 +25,7 @@ function App() {
           element={
             <>
               <SplashImage />
-            
+
               {/* Info Grid Section with unified styling */}
               <section className="info-grid-section">
                 <div className="info-grid-container">
@@ -31,7 +33,7 @@ function App() {
 
                   {/* Info Grid Title */}
                   <h2 id="about" className="info-grid-title">Our Mission and Vision</h2>
-                  
+
                   {/* Info Grid */}
                   <div className="info-grid">
                     <div className="section-box">
@@ -44,15 +46,15 @@ function App() {
                       <Vision />
                     </div>
                   </div>
+                  <Contact />
 
-               
-                    <Contact />
-               
                 </div>
               </section>
             </>
           }
         />
+        <Route path="/meet-the-team" element={<PlaceholderPage />} />
+        <Route path="/apprenticeship-info" element={<PlaceholderPage />} />
       </Routes>
       <Footer />
     </Router>

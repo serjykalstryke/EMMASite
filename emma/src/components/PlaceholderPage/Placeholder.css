@@ -1,0 +1,46 @@
+/* PlaceholderPage.css */
+
+.placeholder-page {
+    text-align: center;
+    padding: 2rem;
+    color: #d1d5db; /* Light grey text for readability */
+    background-color: #1e1e1e; /* Dark background to match site */
+    min-height: 90vh; /* Centers content vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .placeholder-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(145, 188, 187); /* Electric blue */
+    text-shadow: 
+      0 0 5px rgba(147, 192, 190, 0.6),
+      0 0 10px rgba(147, 192, 190, 0.4),
+      0 0 15px rgba(147, 192, 190, 0.2);
+    margin-bottom: 1rem;
+  }
+  
+  .placeholder-text {
+    font-size: 1.2rem;
+    color: #b0bec5; /* Softer grey for supporting text */
+    margin-bottom: 2rem;
+  }
+  
+  .placeholder-link {
+    background-color: var(--electric-blue);
+    font-size: 1.1rem;
+    color: var(--text-light-grey); 
+    text-decoration: none;
+    border: 1px solid rgba(147, 192, 190, 0.2); /* Subtle border */
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .placeholder-link:hover {
+    background-color: var(--blue-glow); /* Electric blue background on hover */
+    color: #1e1e1e; /* Dark color for contrast */
+  }
+  
