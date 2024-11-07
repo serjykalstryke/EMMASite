@@ -36,8 +36,11 @@
     border: 1px solid rgba(147, 192, 190, 0.2); /* Subtle border */
     padding: 10px 20px;
     border-radius: 4px;
+    max-width: 1200px;
+    display: inline-block; /* Ensures the button doesn't stretch full width */
+    margin: 0 auto; /* Centers the button */
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
+}
   
   .placeholder-link:hover {
     background-color: var(--blue-glow); /* Electric blue background on hover */
