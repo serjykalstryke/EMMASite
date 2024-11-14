@@ -18,22 +18,18 @@ function Contact() {
             <Card.Text className="mb-4">
               Whether you're interested in joining our apprenticeship program, working with us, or collaborating as a client, we'd love to hear from you! 
             </Card.Text>
-            <Card.Text className="mb-10">
-              For those interested in volunteering their time or in an instructor role, please add that information to the subject line of your email!
-            </Card.Text>
-
             <div className="contact-buttons mb-4">
               <Link to="https://docs.google.com/forms/d/1CvQQ_6F4heYkwLgml41Q6Wb4ewAHOnVJjw9NkXKGybI/viewform?ts=66e49f95&edit_requested=true">
                 <Button variant="primary" size="lg" className="mb-2">
                   Aspiring Students
                 </Button>
               </Link>
-              <Link to="mailto:info@emma.foundation">
+              <Link to="mailto:nfo@emma.foundation?subject=Employment">
                 <Button variant="primary" size="lg" className="mb-2">
                   Interested in Employment
                 </Button>
               </Link>
-              <Link to="mailto:volunteer@emma.foundation">
+              <Link to="mailto:volunteer@emma.foundation?subject=Volunteer">
                 <Button variant="primary" size="lg" className="mb-2">
                  Interested in Volunteering
                 </Button>
