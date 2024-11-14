@@ -24,7 +24,7 @@ function Contact() {
                   Aspiring Students
                 </Button>
               </Link>
-              <Link to="mailto:nfo@emma.foundation?subject=Employment">
+              <Link to="mailto:info@emma.foundation?subject=Employment">
                 <Button variant="primary" size="lg" className="mb-2">
                   Interested in Employment
                 </Button>
