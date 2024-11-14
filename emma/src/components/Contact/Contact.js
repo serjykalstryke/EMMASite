@@ -16,7 +16,10 @@ function Contact() {
             <FontAwesomeIcon icon={faPaperPlane} size="3x" className="mb-3 contact-icon" />
             <Card.Title className="mb-3">Get in Touch</Card.Title>
             <Card.Text className="mb-4">
-              Whether you're interested in joining our apprenticeship program, working with us, or collaborating as a client, we'd love to hear from you!
+              Whether you're interested in joining our apprenticeship program, working with us, or collaborating as a client, we'd love to hear from you! 
+            </Card.Text>
+            <Card.Text className="mb-10">
+              For those interested in volunteering their time or in an instructor role, please add that information to the subject line of your email!
             </Card.Text>
 
             <div className="contact-buttons mb-4">
@@ -27,12 +30,17 @@ function Contact() {
               </Link>
               <Link to="mailto:info@emma.foundation">
                 <Button variant="primary" size="lg" className="mb-2">
-                  Aspiring Employees & Volunteers
+                  Interested in Employment
+                </Button>
+              </Link>
+              <Link to="mailto:volunteers@emma.foundation">
+                <Button variant="primary" size="lg" className="mb-2">
+                 Interested in Volunteering
                 </Button>
               </Link>
               <Link to="mailto:investors@emma.foundation">
                 <Button variant="primary" size="lg" className="mb-2">
-                  Interested Clients
+                  Potential Clients
                 </Button>
               </Link>
             </div>
