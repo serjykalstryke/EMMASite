@@ -33,7 +33,7 @@ function Contact() {
                   Interested in Employment
                 </Button>
               </Link>
-              <Link to="mailto:volunteers@emma.foundation">
+              <Link to="mailto:volunteer@emma.foundation">
                 <Button variant="primary" size="lg" className="mb-2">
                  Interested in Volunteering
                 </Button>
